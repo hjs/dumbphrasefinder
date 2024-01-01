@@ -1,0 +1,17 @@
+# dist files
+dist/
+
+# node modules & logs
+node_modules
+logs
+*.log
+npm-debug.log*
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# environment variables
+.env
