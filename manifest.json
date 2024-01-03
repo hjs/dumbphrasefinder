@@ -1,11 +1,11 @@
 {
   "manifest_version": 3,
-  "name": "CircleBack",
-  "short_name": "circleback",
+  "name": "Dumb Phrase Finder",
+  "short_name": "dumbphrasefinder",
   "version": "0.1",
   "author": "Harley Sugarman <harleysugarman@gmail.com>",
 
-  "description": "God, please let's not circle back.",
+  "description": "Let's stop circling back. I'm getting dizzy.",
 
   "content_scripts": [
     {

@@ -1,8 +1,8 @@
-# CircleBack
+# Dumb Phrase Finder
 
 Based on [this](https://github.com/josteink/gmailjs-node-boilerplate) and [this](https://github.com/KartikTalwar/gmail.js/).
 
-## Usage
+## Installation
 
 ```
 # clone the repo (duh)
