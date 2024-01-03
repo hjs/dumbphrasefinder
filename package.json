@@ -1,7 +1,7 @@
 {
   "name": "Dumb Phrase Finder",
   "version": "0.1.0",
-  "description": "",
+  "description": "Let's stop circling back. I'm getting dizzy.",
   "main": "",
   "scripts": {
     "deps": "npm install",
