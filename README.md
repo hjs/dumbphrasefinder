@@ -1,6 +1,8 @@
 # Dumb Phrase Finder
 
-Based on [this](https://github.com/josteink/gmailjs-node-boilerplate) and [this](https://github.com/KartikTalwar/gmail.js/).
+Based on the awesome [gmailjs](https://github.com/KartikTalwar/gmail.js/) library and [this](https://github.com/josteink/gmailjs-node-boilerplate) boilerplate.
+
+Only works in Chrome and Gmail for now. (I wrote this hungover on New Year's Day, so definitely not super well tested...)
 
 ## Installation
 
@@ -14,7 +16,6 @@ npm install
 npm run build
 ```
 
-Now ensure the code loads and works:
-
-- Load the folder containing the extension (`manifest.json`) in your browser.
-- Load `mail.google.com` in your browser and open the developer console.
+1. Go to `chrome://extensions/` and check the box for `Developer mode` in the top right.
+2. Click the `Load unpacked` button and select the folder containing the extension (`manifest.json`) to install it.
+3. Go to `mail.google.com` in your browser.
