@@ -26,21 +26,23 @@ function startExtension(gmail) {
 }
 
 function analyzeBody(composeBody) {
+  const downcasedBody = composeBody?.toLowerCase() || "";
   dumbPhrases.forEach((phrase) => {
-    if (composeBody.includes(phrase)) {
-      // TODO: show this in the email or a popup
-      console.log("found dumb phrase: " + phrase);
+    if (downcasedBody.includes(phrase)) {
+      gmail.tools.infobox(`found dumb phrase: "${phrase}"`);
     }
   });
 }
 
 const dumbPhrases = [
   "circle back",
+  "circling back",
   "touch base",
   "ping",
-  "check in",
-  "check-in",
-  "checkin",
   "quick question",
   "quick q",
+  "just checking in",
+  "pick your brain",
+  "let's sync",
+  "disrupt",
 ];
