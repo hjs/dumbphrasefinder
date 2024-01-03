@@ -1,6 +1,6 @@
 "use strict";
 
-// loader-code: wait until gmailjs has finished loading, before triggering actual extensiode-code.
+// loader-code: wait until gmailjs has finished loading, before triggering actual extension-code.
 const loaderId = setInterval(() => {
   if (!window._gmailjs) {
     return;
@@ -12,25 +12,10 @@ const loaderId = setInterval(() => {
 
 // actual extension-code
 function startExtension(gmail) {
-  console.log("Extension loading...");
   window.gmail = gmail;
 
   gmail.observe.on("load", () => {
-    const current = gmail.get.current_page();
-    if (current == "email") {
-      console.log("Email page loaded!");
-    }
-    const userEmail = gmail.get.user_email();
-    console.log("Hi there, " + userEmail + ". This is your extension talking!");
-
-    gmail.observe.on("view_email", (domEmail) => {
-      console.log("Looking at email:", domEmail);
-      const emailData = gmail.new.get.email_data(domEmail);
-      console.log("Email data:", emailData);
-    });
-
     gmail.observe.on("compose", (compose) => {
-      console.log("New compose window is opened!", compose);
     });
   });
 }
