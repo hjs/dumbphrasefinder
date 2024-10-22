@@ -16,11 +16,15 @@ function startExtension(gmail) {
 
   gmail.observe.on("load", () => {
     gmail.observe.on("compose", (compose) => {
-      let composeDomElement = compose.dom("body")[0];
+      let composeDomElement = compose.dom("body")["prevObject"][0];
       composeDomElement.addEventListener("keydown", () => {
         let composeBody = compose.body();
         analyzeBody(composeBody);
       });
+    });
+    gmail.observe.on("view_email", (obj) => {
+      let emailObject = new gmail.dom.email(obj.id);
+      console.log("dom from", emailObject.dom("from"));
     });
   });
 }

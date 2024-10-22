@@ -1,5 +1,5 @@
 {
-  "name": "Dumb Phrase Finder",
+  "name": "dumbphrasefinder",
   "version": "0.1.0",
   "description": "Let's stop circling back. I'm getting dizzy.",
   "main": "",
@@ -12,10 +12,10 @@
   "author": "Harley Sugarman",
   "license": "ISC",
   "dependencies": {
-    "gmail-js": "^1.1.1",
-    "jquery": "^3.6.1"
+    "gmail-js": "^1.1.15",
+    "jquery": "4.0.0-beta"
   },
   "devDependencies": {
-    "esbuild": "^0.16.0"
+    "esbuild": "^0.16.17"
   }
 }
